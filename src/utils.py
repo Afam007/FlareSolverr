@@ -145,6 +145,7 @@ async def get_webdriver_nd(proxy: dict = None) -> nd.Browser:
     options.add_argument('--disable-gpu-sandbox')
     options.add_argument('--disable-software-rasterizer')
     options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36')
     options.add_argument('--ignore-ssl-errors')
     # fix GL errors in ASUSTOR NAS
     # https://github.com/FlareSolverr/FlareSolverr/issues/782
